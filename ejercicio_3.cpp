@@ -16,7 +16,7 @@ namespace Geometria {
 }
 
 int main() {
-    Geometria::Circulo r(10.678);
+    Geometria::Circulo r(33);
     std::cout << "Area: " << r.calcularArea() << std::endl;
     std::cout << "Perimetro: " << r.calcularPerimetro() << std::endl;
     std::cout << "Area del semicirculo: " << r.calcularArea() / 2 << std::endl;
