@@ -11,19 +11,28 @@ namespace Matematicas {
         return a - b;
     }
 
-    int multiplicacion (int a, int b) {
+    int multiplicacion(int a, int b) {
         return a * b;
     }
 
-    int division (int a, int b) {
+    int division(int a, int b) {
         return a / b;
     }
 
-    int modulo (int a, int b) {
+    int modulo(int a, int b) {
         return a % b;
     }
-    int potencia (int a, int b) {
+
+    int potencia(int a, int b) {
         return a ^ b;
+    }
+
+    int raizCuadrada(int a) {
+        return a ^ 1 / 2;
+    }
+
+    int raizCubica(int a) {
+        return a ^ 1 / 3;
     }
 }
 
@@ -34,6 +43,8 @@ int main() {
     std::cout << "Division: " << Matematicas::division(8, 4) << std::endl;
     std::cout << "Modulo: " << Matematicas::modulo(8, 4) << std::endl;
     std::cout << "Potencia: " << Matematicas::potencia(8, 4) << std::endl;
-
+    std::cout << "Raiz cuadrada: " << Matematicas::raizCuadrada(5) << std::endl;
+    std::cout << "Raiz cubica: " << Matematicas::raizCubica(10) << std::endl;
     return 0;
 }
+
